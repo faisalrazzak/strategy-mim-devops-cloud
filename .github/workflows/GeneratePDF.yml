@@ -14,3 +14,7 @@ jobs:
           entrypoint: "/github/workspace/autogeneratePDF.sh"
       - run: |
           ls -al ${{ github.workspace }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: *.pdf

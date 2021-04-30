@@ -1,0 +1,20 @@
+name: Generate PDF 
+on: [push]
+jobs:
+  convert_to_pdf:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          ls -al ${{ github.workspace }}
+          chmod +x autogeneratePDF.sh
+          ls -al ${{ github.workspace }}
+      - uses: docker://pandoc/latex:2.9
+        with:
+          entrypoint: "/github/workspace/autogeneratePDF.sh"
+      - run: |
+          ls -al ${{ github.workspace }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: strategy-mim-devops-cloud-paper
+          path: "*.pdf"

@@ -1,3 +1,7 @@
+\newpage 
+
+## Security Strategy for Microsoft Azure KeyVault
+
 ![Strategy for an Azure Key Vault using a push integration model](images/akv.png)
 
 The above diagram shows a depiction of the proposed strategy for AKV using push integration model for securely getting policy compliant certificates from upstream certificate service. InfoSec team provides upstream certificate service using Venafi’s TPP that orchestrates the lifecycle of the certificate from request, renewal, revocation to provisioning certificates. Once the certificate is provisioned to AKV, different

@@ -1,3 +1,7 @@
+\newpage
+
+# Background
+
 Around the globe, enterprises are digitally transforming their organizations to meet their business objectives to drive innovation to meet future business needs. COVID-19 has only provided impetus to accelerate these efforts. The backbone of this digital transformation depends upon modernizing IT infrastructure and enabling developers to quickly develop solutions for problems. Thanks to the availability of hybrid-cloud environments, cloud-agnostic environments and wide adoption of DevOps operating models, accelerating application deployment is easier than ever before.
 
 Though digital transformation has enabled enterprises to  innovate faster than ever before and has unleashed people’s ingenuity to solve complex business ideas, it has also created security governance problems for resource-constrained InfoSec teams. Adding to the complexity of these initiatives, there are usually multiple teams involved, each having different focus and objectives:  InfoSec, Development/Deployment, and Platform teams.

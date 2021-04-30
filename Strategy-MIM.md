@@ -1,3 +1,7 @@
+\newpage
+
+# Proposed Strategy
+
 I suggests that enterprises address security using a 3-tiered strategy. We explain the above-mentioned strategy by focusing on X.509 certificate (hereafter: certificate) as a machine identity. However, the strategy can be adopted for other machine identities like SSH keys and API/Access Tokens.  
 
 Certificates are used to identify different entities such as person, organization, account, process, workloads, or device by using the associated private key. The use of certificates spread from traditional to modern IT infrastructures. Traditionally, network devices have used certificates to enable secure communication using TLS protocol, Operating system and browsers have used certificates to provide root-of-trust, code signing systems have used certificates to digitally sign and verify artifacts to establish the authenticity of the author and integrity of the artifacts. Modern runtime frameworks like SPIFFE/SPIRE and Service Meshes have also recognized the need to use certificates to establish identity for workloads running in cloud-agnostic environments like Kubernetes and Serverless. This entails that enterprises will see a significant growth of certificate consumption in coming years. Managing certificates had been a challenge for InfoSec teams in the past and this challenge will only get bigger as enterprises transition to more modern IT infrastructures. 

@@ -15,3 +15,4 @@ manner. Platform teams should utilize platform native plugins or tools to integr
    4. [Security Strategy for Kubernetes](k8s-strategy-mim.md)
    5. [Security Strategy for IaC (Terraform/Ansible)](iac-strategy-mim.md)
 5. [Summary](Summary.md)
+

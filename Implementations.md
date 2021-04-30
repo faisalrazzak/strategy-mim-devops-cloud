@@ -1,4 +1,6 @@
-## Implementations
+\newpage 
+
+# Implementations
 
 1. [Security Strategy for Microsoft Azure KeyVault](azure-key-vault-strategy-mim.md)
 2. [Security Strategy for AWS ACM](acm-strategy-mim.md)

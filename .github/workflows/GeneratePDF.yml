@@ -6,9 +6,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          ls -al ${{ github.workspace }}
           chmod +x autogeneratePDF.sh
+          ls -al ${{ github.workspace }}
       - uses: docker://pandoc/latex:2.9
         with:
           entrypoint: autogeneratePDF.sh
       - run: |
-          ls ${{ github.workspace }}
+          ls -al ${{ github.workspace }}

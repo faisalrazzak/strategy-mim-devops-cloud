@@ -12,21 +12,21 @@ This is a depiction of the proposed strategy. InfoSec team establishes upstream 
 
 InfoSec team should act as a service provider and establish an upstream certificate service for different teams providing following features:  
 
-    * Provide support to enforce security policies in a pro-active and automated manner.  
+* Provide support to enforce security policies in a pro-active and automated manner.  
 
-    * Provide altering and notification capabilities. 
+* Provide altering and notification capabilities. 
 
-    * Provide support to establish ownership of certificates.  
+* Provide support to establish ownership of certificates.  
 
-    * Provide logging and traceability support to establish accountability.  
+* Provide logging and traceability support to establish accountability.  
 
-    * Provide crypto agility.  
+* Provide crypto agility.  
 
-    * Provide different integration methods ranging from APIs, SDKs to Platform native plugins. 
+* Provide different integration methods ranging from APIs, SDKs to Platform native plugins. 
 
-    * Provide support for approval process to meat change control board requirements. 
+* Provide support for approval process to meat change control board requirements. 
 
-    * Provide high-availability and the ability to scale based on demand from consumers.  
+* Provide high-availability and the ability to scale based on demand from consumers.  
 
 Like any other InfoSec program in an enterprise, broadcasting and communicating information to different business units is a key aspect of establishing a service delivery model. InfoSec team should share information about the availability of the upstream certificate service to Platform teams. In addition, developing platform specific integration guidelines are also important to help bootstrap Platform teams.      
 
@@ -34,9 +34,9 @@ While a Platform team should act as a consumer of the upstream certificate servi
 
 The downstream certificate service can operate in either pull integration model or push integration model. 
 
-    * Pull integration model: Pull integration model is where the upstream certificate service is only acting as a source of policy compliant certificates. Any certificate request originating through the platform is routed to upstream certificate service and the certificate is retrieved. This orchestration process is primarily handled by the downstream certificate service. Pull integration model is suitable for teams that are managing modern cloud-agnostic platforms like OpenShift or HashiCorp Vault, or where deployment of environments and applications is handled by modern Infrastructure and configuration managements tools like Terraform and Ansible.  
+* Pull integration model: Pull integration model is where the upstream certificate service is only acting as a source of policy compliant certificates. Any certificate request originating through the platform is routed to upstream certificate service and the certificate is retrieved. This orchestration process is primarily handled by the downstream certificate service. Pull integration model is suitable for teams that are managing modern cloud-agnostic platforms like OpenShift or HashiCorp Vault, or where deployment of environments and applications is handled by modern Infrastructure and configuration managements tools like Terraform and Ansible.
 
-    * Push integration model: Push integration model is where the upstream certificate service can push certificates to the downstream certificate service. This orchestration process is handled by the upstream certificate service. Push model is suitable for teams managing public cloud infrastructure like AWS, Azure, GCP and where cloud-provider native services are used heavily by Development & Deployment teams.    
+* Push integration model: Push integration model is where the upstream certificate service can push certificates to the downstream certificate service. This orchestration process is handled by the upstream certificate service. Push model is suitable for teams managing public cloud infrastructure like AWS, Azure, GCP and where cloud-provider native services are used heavily by Development & Deployment teams.
 
 For Platform teams, broadcasting and communicating information to Development & Deployment teams is critical to enable self-service. The availability of a downstream certificate service and development of platform specific certificate templates can help Development & Deployment teams to organically embed security in existing developer and deployment workflows. 
 

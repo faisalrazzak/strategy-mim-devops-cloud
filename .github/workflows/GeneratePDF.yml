@@ -16,5 +16,5 @@ jobs:
           ls -al ${{ github.workspace }}
       - uses: actions/upload-artifact@v2
         with:
-          name: my-artifact
+          name: strategy-mim-devops-cloud-paper
           path: "*.pdf"

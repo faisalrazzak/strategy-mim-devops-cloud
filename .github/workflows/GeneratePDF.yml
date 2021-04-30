@@ -11,6 +11,6 @@ jobs:
           ls -al ${{ github.workspace }}
       - uses: docker://pandoc/latex:2.9
         with:
-          entrypoint: autogeneratePDF.sh
+          entrypoint: "/github/workspace/autogeneratePDF.sh"
       - run: |
           ls -al ${{ github.workspace }}

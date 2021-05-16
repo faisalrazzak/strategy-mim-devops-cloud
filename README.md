@@ -1,5 +1,7 @@
 ![Pipeline](https://github.com/faisalrazzak/strategy-mim-devops-cloud/actions/workflows/GeneratePDF.yml/badge.svg)
 
+[Download PDF](docs/strategy-mim-devops-cloud-paper.pdf)
+
 # Strategy to manage machine identities in DevOps & Cloud environments
 
 This paper introduces a 3-tiered strategy for enterprises to manage machine identities as part of their digital transformation initiatives. The foundational principle is that security must be a shared concern between InfoSec, Platform, and Development/Deployment teams.

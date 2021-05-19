@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:ListServerCertificates",
+                "cloudfront:GetDistribution",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:DescribeListeners",
+                "acm:GetCertificate",
+                "acm:ListCertificates",
+                "acm:ImportCertificate",
+                "cloudfront:GetDistributionConfig",
+                "cloudfront:ListDistributions",
+                "elasticloadbalancing:DescribeTargetGroups"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

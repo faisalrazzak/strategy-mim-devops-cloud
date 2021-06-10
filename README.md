@@ -13,7 +13,7 @@ manner. Platform teams should utilize platform native plugins or tools to integr
 2. [Security - A Shared Concern](Security-SharedConcern.md)
 3. [Proposed Strategy](Strategy-MIM.md)
 4. [Implementations](Implementations.md)
-   1. [Security Strategy for Microsoft Azure KeyVault](azure-key-vault-strategy-mim.md)
+   1. [Security Strategy for Microsoft Azure KeyVault](azure-key-vault-strategy-mim-README.md)
    2. [Security Strategy for AWS ACM](acm-strategy-mim-README.md)
    3. [Security Strategy for HashiCorp Vault](hashicorp-vault-strategy-mim.md)
    4. [Security Strategy for Kubernetes](k8s-strategy-mim.md)

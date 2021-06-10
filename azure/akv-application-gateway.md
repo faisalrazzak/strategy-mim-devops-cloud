@@ -9,7 +9,7 @@ Implementing Azure Key Vault as a downstream certificate service is recommended 
 
 ![Strategy for an Azure Key Vault using a push integration model](resources/images/akv.png)
 
-This technical document outlines (1) the procedure to integrate Venafi's TPP with Azure Key Vault using push integration model. (2) provides guidance on roles played by InfoSec, Platform and Development & Deployment teams. (3) integration with native Azure services like application gateways.
+This technical document outlines (1) the procedure to integrate Venafi's TPP with Azure Key Vault using push integration model. (2) provides guidance on roles played by InfoSec, Platform and Development & Deployment teams. (3) integration with native Azure services like application gateways and front door.
 
 \newpage
 
@@ -30,6 +30,11 @@ Following steps are required to provision a certificate from Venafi’s Trust Pr
 2.	Approve certificate Request
 3.	Install certificate to Azure Key Vault.
 
+Following steps should be following to configure the certificate to Azure Application Gateway.
+
+1.	Run PowerShell script to configure certificate with Azure Application Gateway. 
+
+
 \newpage
 
 # Assigned Roles
@@ -48,6 +53,8 @@ Following steps are required to provision a certificate from Venafi’s Trust Pr
 | Create certificate Request | C/I | R |  |
 | Approve certificate Request | R | I |  |
 | Install certificate to Azure Key Vault | R | I |  |
+| Run PowerShell script to configure certificate with Azure Application Gateway | I | R |  |
+
 
 
 <br>
@@ -74,6 +81,8 @@ I &rarr; Informed of the task <br>
 | Create certificate Request | C/I |  | R |
 | Approve certificate Request | R |  | I |
 | Install certificate to Azure Key Vault | R |  | I |
+| Run PowerShell script to configure certificate with Azure Application Gateway | I | R/A | C/R |
+
 
 <br>
 
@@ -232,3 +241,24 @@ Before provisioning a certificate from TPP to Azure Key Vault, following informa
    3. Management Type to "Provisioning".
 
 ![Azure certificate in TPP](resources/images/21.png)
+
+## Run PowerShell script to configure certificate with Azure Application Gateway
+
+
+This PowerShell script can be triggered from any CI/CD pipeline tool. For example, Azure DevOps, Jenkins, etc.
+
+<br>
+
+
+<code>
+$AppGW = Get-AzApplicationGateway -Name "ApplicationGateway01" -ResourceGroupName "ResourceGroup01"
+$secret = Get-AzKeyVaultCertificate -VaultName "keyvault01" -Name "sslCert01"
+$secretId = $secret.SecretId.Replace($secret.Version, "") # https://<keyvaultname>.vault.azure.net/secrets/
+$AppGW = Add-AzApplicationGatewaySslCertificate -ApplicationGateway $AppGW -Name "Cert01" -KeyVaultSecretId $secretId
+</code>
+
+<br>
+
+<br>
+
+More details can be found at [link](https://docs.microsoft.com/en-us/powershell/module/az.network/add-azapplicationgatewaysslcertificate)

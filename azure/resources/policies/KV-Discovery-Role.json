@@ -1,0 +1,24 @@
+{
+    "id": "/subscriptions/your-subscription-id/providers/Microsoft.Authorization/roleDefinitions/f1dca1d0-7d10-425d-a3f6-9e50444a63cc",
+    "properties": {
+        "roleName": "KV-Discovery-Role",
+        "description": "Discovery Role",
+        "assignableScopes": [
+            "/subscriptions/your-subscription-id/resourceGroups/Spoke-LOB-NetOps"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.KeyVault/vaults/read"
+                ],
+                "notActions": [],
+                "dataActions": [
+                    "Microsoft.KeyVault/vaults/certificates/read",
+                    "Microsoft.KeyVault/vaults/secrets/getSecret/action",
+                    "Microsoft.KeyVault/vaults/secrets/readMetadata/action"
+                ],
+                "notDataActions": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "/subscriptions/your-subscription-id/providers/Microsoft.Authorization/roleDefinitions/ff43aeb9-f162-4fc1-8785-c6b3afd77e5a",
+  "properties": {
+    "roleName": "KV-Provisioning-Role",
+    "description": "KV-Provisioning-Role",
+    "assignableScopes": [
+      "/subscriptions/your-subscription-id/resourceGroups/Spoke-LOB-NetOps"
+    ],
+    "permissions": [
+      {
+        "actions": [],
+        "notActions": [],
+        "dataActions": [
+          "Microsoft.KeyVault/vaults/certificates/create/action",
+          "Microsoft.KeyVault/vaults/certificates/update/action",
+          "Microsoft.KeyVault/vaults/certificates/import/action",
+          "Microsoft.KeyVault/vaults/certificates/read"
+        ],
+        "notDataActions": []
+      }
+    ]
+  }
+}

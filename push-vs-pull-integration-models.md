@@ -27,13 +27,13 @@
 
 | Concerns\Integration Model     | Push Model     | Pull Model     |
 | --------------- |:-----------:|:-----------------:|
-|1. Request/Renew certificate| Venafi's TPP | Venafi's TPP + IaC platform |
-|2. Request/Renew + Install certificate | Venafi's TPP | Venafi's TPP + IaC platforms |
-|3. Decommission certificate | Venafi's TPP | |
+|1. Request/Renew cerificate | Venafi's TPP | IaC platform |
+|2. Request/Renew + Install certificate | Venafi's TPP | IaC platforms |
+|3. Decommission certificate | Venafi's TPP | IaC platforms **(and)** Venafi's TPP |
 |4. Private/Public key generation | Venafi's TPP | IaC platforms |
 |5. Organization in TPP | Folders/Device/Application/Certificate/Custom Fields | Folders/Certificate/Custom Fields |
-|6. Validation/Monitoring | Venafi's TPP | IaC platform + Venafi's TPP (certificate based) |
-|7. Notifications | Venafi's TPP | IaC platform + Venafi's TPP |
+|6. Validation/Monitoring | Venafi's TPP | IaC platform **(and/or)** Venafi's TPP (certificate based) |
+|7. Notifications | Venafi's TPP | IaC platform **(and/or)** Venafi's TPP |
 |8. Private Key Location | Venafi's TPP | IaC platforms |
 |9. Automated Renewals | Venafi's TPP | IaC platforms |
 

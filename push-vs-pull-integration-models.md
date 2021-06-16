@@ -12,9 +12,9 @@
 |6. Increasing footprint of certificate endpoints (Cloud/DevOps/NetOps) | Not Recommended | Recommended |
 |7. How to integrate with change management process (SNOW) ? | Venafi's TPP | Venafi's TPP **(and/or)** IaC Platform |
 |8. Who manages certificate lifecycle process ? | Venafi's TPP | Venafi's TPP **(and)** IaC Platform |
-|9. Synchronous Bootstrapping/Initiation of Infrastructure/Application - Immutable infrastructure/application | Not Recommended | Recommended |
+|9. Synchronous Bootstrapping/Initiation of Infrastructure/Application - Immutable infrastructure/application (Dynamic environment) | Not Recommended | Recommended |
 |10. Mutable infrastructure/Immutable applications | Recommended | Recommended |
-|11. Mutable infrastructure/Mutable applications | Recommended | Not Recommended |
+|11. Mutable infrastructure/Mutable applications (Static environment) | Recommended | Not Recommended |
 |12. State management | Venafi's TPP | IaC platforms |
 |13. Which model provides ease of Integratation with exiting CI/CD pipelines/workflows ? | Medium | Easy |
 |14. Certificate Ownership (InfoSec/Security Engineering team) | Recommended | Not Recommended | 

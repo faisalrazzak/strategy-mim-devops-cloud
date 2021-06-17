@@ -5,7 +5,7 @@
 | Concerns\Integration Model     | Push Model     | Pull Model     |
 | --------------- |:-----------:|:-----------------:|
 |1. Governance - How certificate policy is enforced ? | Certificate policy **can be** enforced in a proactive or manual manner | Certificate policy **must be** enforced in a proactive manner. |
-|2. Governance - Visbility | Venafi's TPP | Venafi's TPP |
+|2. Governance - Visibility | Venafi's TPP | Venafi's TPP |
 |3. Governance - Reporting | Venafi's TPP | Venafi's TPP |
 |4. Governance - Notifications/Alerting | Venafi's TPP | Venafi's TPP **(and/or)** IaC Platform |
 |5. Governance - Management | Venafi's TPP | Venafi's TPP **(and/or)** IaC Platform |

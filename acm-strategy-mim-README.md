@@ -9,3 +9,4 @@ For a Platform team managing AWS cloud deployment introducing ACM as a downstrea
 
 ### References
 * [ACM Discovery Policy](material/aws-min-acm-discovery-policy.json)
+* [ACM ALB Certificate Change Policy (Existing Listener/TargetGroup)](material/aws-min-acm-alb-certificate-change-policy.json)

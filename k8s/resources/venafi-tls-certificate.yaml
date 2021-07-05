@@ -1,0 +1,41 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: venafi-tls-cert-app1
+  namespace: app1
+  annotations:
+    venafi.cert-manager.io/custom-fields: |-
+      [
+        {"name": "LOB", "value": "International - Canada"},
+        {"name": "Platform", "value": "Loadbalancer (F5)"},
+        {"name": "Certificate Type", "value": "Web Server SSL"},
+        {"name": "Certificate Format", "value": "PEM (Base64)"}
+      ]
+spec:
+  subject:
+    organizations:
+      - PSCSA
+    localities:
+      - Burlington
+    countries:
+      - CA
+    provinces:
+      - Ontario 
+  # Secret names are always required.
+  secretName: venafi-tls-cert-app1
+  renewBefore: 23h30m 
+  # The use of the common name field has been deprecated since 2000 and is
+  # discouraged from being used.
+  commonName: venafi-tls-cert-app1
+  dnsNames:
+    - venafi-tls-cert.apps.app1.azurestack.net
+  isCA: false
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+    rotationPolicy: Always
+  issuerRef:
+    name: venafi-cluster-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io

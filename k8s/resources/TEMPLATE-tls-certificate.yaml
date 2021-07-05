@@ -1,0 +1,35 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: <name-of-tls-certificate> # name of tls certificate object.
+  namespace: <application-namespace> # namespace identifier where to create the certificate object.
+  annotations: # Change "value" for custom-fields as needed.
+    venafi.cert-manager.io/custom-fields: |-
+      [
+        {"name": "LOB", "value": "International - Canada"},
+        {"name": "Platform", "value": "Loadbalancer (F5)"},
+        {"name": "Certificate Type", "value": "Web Server SSL"},
+        {"name": "Certificate Format", "value": "PEM (Base64)"}
+      ]
+spec:
+  subject:
+    organizations:
+      - <Orgnanization name>
+    localities:
+      - <City>
+    countries:
+      - <Country Code> 
+    provinces:
+      - <State>
+  # Secret names are always required.
+  secretName: <name-of-tls-secret> # Make sure this is similar to certificate resource name.
+  commonName: <common-name-of-certificate> # define common-name. Application should change this field.
+  dnsNames:
+    - <DNS SAN> # Application team should change this field>
+  isCA: false
+  privateKey:
+    rotationPolicy: Always
+  issuerRef:
+    name: <name-of-cluster-issuer> # name of cluster-issuer
+    kind: ClusterIssuer
+    group: cert-manager.io

@@ -1,0 +1,23 @@
+{
+    "id": "/subscriptions/your-subscription-id/providers/Microsoft.Authorization/roleDefinitions/1e02b68f-67a4-46f9-86fa-45a6a3d1b5b6",
+    "properties": {
+        "roleName": "WebApp-Access",
+        "description": "This role grants access to change certificate at the App Service level - Custom Domains. Use it in conjunction with WebApp-Access-Service-Plan custom role",
+        "assignableScopes": [
+            "/subscriptions/your-subscription-id/resourceGroups/KraftRG",
+            "/subscriptions/your-subscription-id/resourceGroups/FISTRG"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Web/certificates/*",
+                    "Microsoft.Web/sites/*",
+                    "Microsoft.Resources/subscriptions/resourceGroups/*"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

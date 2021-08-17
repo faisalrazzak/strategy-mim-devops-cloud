@@ -12,3 +12,4 @@ For a Platform team managing Azure cloud deployment introducing AKV as a downstr
 ### References
 * [Integrate TPP with Azure Key Vault](azure/akv-downstream-service.md)
 * [Integrate TPP with Azure Application Gateway](azure/akv-application-gateway.md)
+* [Integrate TPP with Azure App Service](azure/akv-app-service.md)

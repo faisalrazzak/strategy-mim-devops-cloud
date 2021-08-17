@@ -11,6 +11,8 @@ Implementing Azure Key Vault as a downstream certificate service is recommended 
 
 This technical document outlines the procedure to integrate Azure Key Vault with Venafi’s TPP system using push integration model, and to install certificates to Key Vault & associate with Azure App Service (Custom Domain).
 
+![Integration with App Service](resources/images/30.png)
+
 \newpage
 
 # Procedure

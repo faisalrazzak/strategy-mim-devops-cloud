@@ -17,6 +17,6 @@ manner. Platform teams should utilize platform native plugins or tools to integr
    2. [Security Strategy for AWS ACM](acm-strategy-mim-README.md)
    3. [Security Strategy for HashiCorp Vault](hashicorp-vault-strategy-mim.md)
    4. [Security Strategy for Kubernetes](k8s-strategy-mim-README.md)
-   5. [Security Strategy for IaC (Terraform/Ansible)](iac-strategy-mim.md)
+   5. [Security Strategy for IaC (Terraform/Ansible)](iac-strategy-mim-README.md)
 5. [Summary](Summary.md)
 

@@ -1,0 +1,18 @@
+<UserGroup name="DATAPOWER-VENAFI-RO-GRP" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<UserSummary>Used by Venafi to perform Onboard discovery</UserSummary>
+<AccessPolicies>*/*/config/save-config?Access=x</AccessPolicies>
+<AccessPolicies>*/*/crypto/cert?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/crypto-export?Access=r+x</AccessPolicies>
+<AccessPolicies>*/*/crypto/idcred?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/key?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/profile?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/ssl-client?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/ssl-server?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/sslproxy?Access=r</AccessPolicies>
+<AccessPolicies>*/*/crypto/valcred?Access=r</AccessPolicies>
+<AccessPolicies>*/*/file/cert?Access=r</AccessPolicies>
+<AccessPolicies>*/*/file/sharedcert?Access=r</AccessPolicies>
+<AccessPolicies>*/*/file/temporary?Access=r+d</AccessPolicies>
+<AccessPolicies>*/*/login/rest-mgmt?Access=x</AccessPolicies>
+<AccessPolicies>*/*/login/xml-mgmt?Access=x</AccessPolicies></UserGroup>

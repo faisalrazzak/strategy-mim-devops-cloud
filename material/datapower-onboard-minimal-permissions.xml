@@ -1,7 +1,6 @@
 <UserGroup name="DATAPOWER-VENAFI-RO-GRP" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
 <mAdminState>enabled</mAdminState>
 <UserSummary>Used by Venafi to perform Onboard discovery</UserSummary>
-<AccessPolicies>*/*/config/save-config?Access=x</AccessPolicies>
 <AccessPolicies>*/*/crypto/cert?Access=r</AccessPolicies>
 <AccessPolicies>*/*/crypto/crypto-export?Access=r+x</AccessPolicies>
 <AccessPolicies>*/*/crypto/idcred?Access=r</AccessPolicies>
